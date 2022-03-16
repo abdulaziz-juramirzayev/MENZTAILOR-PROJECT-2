@@ -1,0 +1,42 @@
+@font-face {
+    font-family: Abdulaziz;
+    src: url(/M_PLUS_1/MPLUS1-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;border: none;
+    transition: all .1s linear;
+    font-family: sans-serif;
+}
+.navbar{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(247, 243, 238);
+    display: flex;
+    justify-content: center;
+}
+.navbar img {
+    float: left;
+    margin-top: 30px;
+}
+ul {
+    list-style-type: none;
+
+    
+}
+ul li {
+    float: left;
+
+}
+ul li a{
+    
+    line-height: 100px;
+    padding: 15px;
+    font-size: 18px;
+    color: rgb(78, 76, 76);
+    font-weight: 0;
+    font-family: Abdulaziz;
+    
+}
