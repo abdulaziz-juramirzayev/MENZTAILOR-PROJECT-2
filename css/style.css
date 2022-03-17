@@ -7,10 +7,14 @@
     transition: all .1s linear;
     font-family: sans-serif;
 }
+#one-section{
+float: right;
+width: 100%;
+}
 .navbar{
    
     float: right;
-    width: 90%;
+    width: 92%;
     height: 100px;
     background-color: rgb(247, 243, 238);
     display: flex;
@@ -32,7 +36,7 @@ ul li {
 
 }
 ul li a{
-    
+    position: relative;
     line-height: 100px;
     padding: 20px;
     font-size: 16px;
@@ -43,21 +47,21 @@ ul li a{
 }
 ul li a:hover{
     color: rgb(238, 161, 17);
+    background-color: black;
 }
-.blog:hover  .blog_drop{
-    top: 10.4%;
-    opacity: 1;
-}
+
 .blog_drop{
     border-top: 9px rgb(78, 76, 76) solid;
-    top: 13.4%;
-    right: 34%;
+    top: 110px;
+    left: 25%;
     width: 150px;
     height: 100px;
     position: absolute;
     display: inline-block;
     background-color: rgb(252, 248, 241);
     opacity: 0;
+    transition:all .5s;
+    z-index: -999;
 }
 .blog_drop .Pra{
     margin-top: -25px;
@@ -67,6 +71,14 @@ ul li a:hover{
     padding-left: 10px;
     color: black !important;
     
+}
+.drobdown{
+    height: 60px !important;
+}
+.blog:hover  .blog_drop{
+    top: 82px;
+    opacity: 1;
+    z-index: 999;
 }
 
 .navbar_button{
@@ -99,4 +111,11 @@ ul li a:hover{
     transform-origin: left;
     
     
+}
+.one-photos{
+    width: 92%;
+    height: 84.8vh;
+    background-image: url('/picture/1rasm_home.webp');
+    float: right !important;
+    background-position-x:-250px;
 }
