@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +6,51 @@
     transition: all .1s linear;
     font-family: sans-serif;
 }
+/*LOADER //////////////////////////////////////////////////////*/
+.loader{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 230, 230);
+    position: fixed;
+    z-index:9 ;
+}
+.loader img{
+    position: fixed;
+    z-index: 9;
+    width: 100px;
+    height: 20px;
+}
+.ring{
+    width: 150px;
+    height: 150px;
+    
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    background-color:#fff;
+    animation: haha 1.2s ease infinite;
+    
+}
+.ring::after{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    border-bottom: 3px solid rgb(230, 168, 55);
+}
+@keyframes haha{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/*LOADER///////////////////////////////////////////////////////*/
 #one-section{
 float: right;
 width: 100%;
@@ -43,16 +87,18 @@ ul li a{
     color: rgb(78, 76, 76);
     font-weight:bolder;
     font-family: 'M PLUS 1', sans-serif;
+    padding-top: 50px;
+    padding-bottom: 40px;
     
 }
 ul li a:hover{
     color: rgb(238, 161, 17);
-    background-color: black;
+    
 }
 
 .blog_drop{
-    border-top: 9px rgb(78, 76, 76) solid;
-    top: 110px;
+    border-top: 6px rgb(238, 161, 17) solid;
+    top: 140px;
     left: 25%;
     width: 150px;
     height: 100px;
@@ -76,7 +122,7 @@ ul li a:hover{
     height: 60px !important;
 }
 .blog:hover  .blog_drop{
-    top: 82px;
+    top: 112px;
     opacity: 1;
     z-index: 999;
 }
@@ -112,10 +158,24 @@ ul li a:hover{
     
     
 }
+/* //              HOME*/
 .one-photos{
     width: 92%;
     height: 84.8vh;
     background-image: url('/picture/1rasm_home.webp');
     float: right !important;
     background-position-x:-250px;
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+/* HOME  //             */
