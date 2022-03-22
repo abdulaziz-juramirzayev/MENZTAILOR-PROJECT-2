@@ -1,0 +1,37 @@
+@media only screen and (max-width:1120px){
+    .navbar{
+        height: 70px;
+        
+    }
+    .navbar .menu ul li {
+        margin-top: -15px;
+    }
+    .navbar  img {
+        margin-top: 20px;
+    }
+    .navbar_button{
+        display: none;
+    }
+    a.blog:hover .blog_drop{
+        position: absolute;
+        margin-top: -15px;
+    
+    }
+    .one-photos{
+        background-position-x: -450px;
+    }
+    .menu{
+        position: absolute;
+        right: 0;
+        height: 70px;
+    }
+}
+@media only screen and (max-width:910px){
+    .menu{
+        position: absolute;
+        left: 0%;
+        top: 50px;
+        height: 50vh;
+    }
+    
+}
